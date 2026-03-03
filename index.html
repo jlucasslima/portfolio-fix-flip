@@ -89,11 +89,11 @@
             background-color: #ecf0f1;
         }
 
-        /* Novo estilo para os vídeos */
+        /* ESTILO CORRIGIDO PARA OS VÍDEOS MANTEREM A PROPORÇÃO ORIGINAL */
         .card-video {
             width: 100%;
-            height: 220px;
-            object-fit: cover;
+            height: 350px; /* Aumentei a altura para acomodar melhor vídeos verticais */
+            object-fit: contain; /* Isso impede que o vídeo estique ou corte as bordas */
             background-color: #000000;
         }
 
@@ -281,7 +281,7 @@
                 </video>
                 <div class="card-content">
                     <h2 class="card-title">Andamento da Obra 1<br><small style="font-size: 0.9rem; color: #7f8c8d;">Flórida</small></h2>
-                    <p style="color: var(--text-muted); font-size: 0.95rem;">Acompanhamento da estrutura e fachada do projeto.</p>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Estrutura inicial do projeto.</p>
                 </div>
             </article>
 
@@ -292,7 +292,7 @@
                 </video>
                 <div class="card-content">
                     <h2 class="card-title">Andamento da Obra 2<br><small style="font-size: 0.9rem; color: #7f8c8d;">Flórida</small></h2>
-                    <p style="color: var(--text-muted); font-size: 0.95rem;">Visão geral da vizinhança e lote em desenvolvimento.</p>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Visão do lote e cercamento.</p>
                 </div>
             </article>
 
@@ -303,7 +303,40 @@
                 </video>
                 <div class="card-content">
                     <h2 class="card-title">Andamento da Obra 3<br><small style="font-size: 0.9rem; color: #7f8c8d;">Flórida</small></h2>
-                    <p style="color: var(--text-muted); font-size: 0.95rem;">Vista da rua e casas prontas ao redor do lote.</p>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Acompanhamento da rua e vizinhança.</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <video controls class="card-video">
+                    <source src="florida4.mp4" type="video/mp4">
+                    Seu navegador não suporta a tag de vídeo.
+                </video>
+                <div class="card-content">
+                    <h2 class="card-title">Oportunidade de Lote<br><small style="font-size: 0.9rem; color: #7f8c8d;">Sul da Flórida</small></h2>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Novo projeto de construção ao lado de casas recém-feitas.</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <video controls class="card-video">
+                    <source src="florida5.mp4" type="video/mp4">
+                    Seu navegador não suporta a tag de vídeo.
+                </video>
+                <div class="card-content">
+                    <h2 class="card-title">Projeto Boca Raton<br><small style="font-size: 0.9rem; color: #7f8c8d;">Boca Raton, FL</small></h2>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Imóvel de 4.300 sqft com pé direito alto, elevador e 4 quartos.</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <video controls class="card-video">
+                    <source src="florida6.mp4" type="video/mp4">
+                    Seu navegador não suporta a tag de vídeo.
+                </video>
+                <div class="card-content">
+                    <h2 class="card-title">Fase de Finalização<br><small style="font-size: 0.9rem; color: #7f8c8d;">Flórida</small></h2>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Casa em fase de acabamento final e gramado sendo iniciado.</p>
                 </div>
             </article>
         </div>
