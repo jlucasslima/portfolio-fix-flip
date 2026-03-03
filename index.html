@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fix & Flip - Portfólio de Investimentos</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #27ae60;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-muted: #7f8c8d;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin-top: 0.5rem;
+            font-size: 1.2rem;
+            color: #bdc3c7;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            background-color: #ecf0f1; /* Placeholder color */
+        }
+
+        .card-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 0 0 1rem 0;
+            color: var(--primary-color);
+        }
+
+        .financial-data {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 1.5rem 0;
+            flex-grow: 1;
+        }
+
+        .financial-data li {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            border-bottom: 1px solid #ecf0f1;
+            padding-bottom: 0.2rem;
+        }
+
+        .financial-data li:last-child {
+            border-bottom: none;
+        }
+
+        .profit-highlight {
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .zillow-btn {
+            display: inline-block;
+            text-align: center;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            padding: 0.8rem;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+
+        .zillow-btn:hover {
+            background-color: #34495e;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Projetos Fix & Flip</h1>
+        <p>Apresentação de resultados e margens de lucro</p>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+
+            <article class="card">
+                <img src="assets/dearborn.jpg" alt="1507 NW Dearborn Ave" class="card-img">
+                <div class="card-content">
+                    <h2 class="card-title">1507 NW Dearborn Ave<br><small style="font-size: 0.9rem; color: #7f8c8d;">Lawton, OK</small></h2>
+                    <ul class="financial-data">
+                        <li><span>Custo Total:</span> <strong>$105,000.00</strong></li>
+                        <li><span>Valor de Venda:</span> <strong>$133,000.00</strong></li>
+                        <li class="profit-highlight"><span>Lucro Estimado:</span> <span>15%</span></li>
+                    </ul>
+                    <a href="https://www.zillow.com/b/1507-nw-dearborn-ave-lawton-ok/34.61426,-98.41168_ll/" target="_blank" class="zillow-btn">Ver no Zillow</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="assets/nw27th.jpg" alt="1639 NW 27th St" class="card-img">
+                <div class="card-content">
+                    <h2 class="card-title">1639 NW 27th St<br><small style="font-size: 0.9rem; color: #7f8c8d;">Lawton, OK</small></h2>
+                    <ul class="financial-data">
+                        <li><span>Aquisição:</span> <strong>$61,640.00</strong></li>
+                        <li><span>Reforma:</span> <strong>$65,000.00</strong></li>
+                        <li><span>Total Investido:</span> <strong>$129,990.00</strong></li>
+                        <li><span>Valor de Venda:</span> <strong>$168,000.00</strong></li>
+                        <li class="profit-highlight"><span>Lucro Estimado:</span> <span>17.40%</span></li>
+                    </ul>
+                    <a href="https://www.zillow.com/homedetails/1639-NW-27th-St-Lawton-OK-73505/49489902_zpid/" target="_blank" class="zillow-btn">Ver no Zillow</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="assets/buffalo.jpg" alt="116 Buffalo Dr" class="card-img">
+                <div class="card-content">
+                    <h2 class="card-title">116 Buffalo Dr<br><small style="font-size: 0.9rem; color: #7f8c8d;">Cache, OK</small></h2>
+                    <ul class="financial-data">
+                        <li><span>Custo da Casa:</span> <strong>$36,000.00</strong></li>
+                        <li><span>Total Investido:</span> <strong>$132,000.00</strong></li>
+                        <li><span>Valor de Venda:</span> <strong>$165,000.00</strong></li>
+                        <li class="profit-highlight"><span>Lucro Estimado:</span> <span>13.75%</span></li>
+                    </ul>
+                    <a href="https://www.zillow.com/homedetails/116-Buffalo-Dr-Cache-OK-73527/49479386_zpid/" target="_blank" class="zillow-btn">Ver no Zillow</a>
+                </div>
+            </article>
+
+        </div>
+    </div>
+
+</body>
+</html>
